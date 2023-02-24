@@ -10,6 +10,7 @@ public class SpisOpApplication {
         SpringApplication.run(SpisOpApplication.class, args);
         System.out.println("HELLO LAURI");
         System.out.println("Halløj du ~GitHubberen");
+        System.out.println("hejsan -laurararararar");
     }
 
 
