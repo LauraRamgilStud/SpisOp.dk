@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org" lang="da">
+<link rel="stylesheet" type="text/css" href="../static/css/headerStyles.css" th:href="@{css/headerStyles.css}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+        <div class="header">
+            <div class="logo">
+                <a th:href="@{/}">
+                    <img th:src="@{images/SppisOpLogo.png}" src="../../static/images/SppisOpLogo.png" alt="Could not render logo">
+                </a>
+            </div>
+            <div class="searchbar">
+                <form class="searchForm">
+                    <input type="text" placeholder="Søg..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="about options">
+                <a th:href="@{/om-os}">Om Os</a>
+            </div>
+            <div class="contact options">
+                <a th:href="@{/kontakt}">Kontakt</a>
+            </div>
+            <div class="join options">
+                <a th:href="@{/tilmeld}">Tilmeld</a>
+            </div>
+        </div>
+
+</body>
+</html>

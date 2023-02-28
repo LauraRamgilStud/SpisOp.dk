@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org" lang="">
+<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
+<link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
+
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
 </head>
 <body>
+    <div th:insert="fragments/logobar-fragment.html"></div>
+    <div th:insert="fragments/navigationBar-fragment.html"></div>
+    <div class="window">
+        <div class="main_1">
+            <h1>Gode Råd</h1>
+            <p>#10 gode råd for at undgå madspild<br>
+                Madspild er et stort problem både for miljøet og for vores økonomi.<br>
+                Her er 10 gode råd til, hvordan du kan undgå madspild:</p>
+        </div>
+        <div class="main_background">
+            <!--<img th:src="@{images/field.jpeg}" src="../../static/images/field.jpeg" alt="">-->
+        </div>
+        <div class="main_2">
 
+        </div>
+    </div>
 </body>
 </html>
