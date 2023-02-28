@@ -1,0 +1,36 @@
+.footerContent {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(3, 1fr) minmax(100px, 3fr);
+    grid-gap: 1em 3em;
+    grid-template-areas:
+      'footerTop'
+      'footerMiddle'
+      'footerBottom';
+}
+
+.toTop {
+    grid-area: footerTop;
+    justify-self: baseline;
+    justify-self: center;
+}
+
+.about {
+    grid-area: footerMiddle;
+    justify-self: baseline;
+    align-self: flex-end;
+}
+
+.contact {
+    justify-self: baseline;
+    grid-area: footerMiddle;
+
+}
+
+.subscribe {
+    grid-area: footerMiddle;
+}
+
+.footerInfo {
+    grid-area: footerBottom;
+}
