@@ -22,4 +22,13 @@ public class MyController {
     @GetMapping("/madspild-i-danmark")
     public String madspildIDanmark() {return "madspild-i-danmark";}
 
+    @GetMapping("/gode-rod")
+    public String godeRod() {return "gode-rod";}
+
+    @GetMapping("/anbefalinger")
+    public String anbefalinger() {return "anbefalinger";}
+
+    @GetMapping("/bliv-inspireret")
+    public String blivInspireret() {return "bliv-inspireret";}
+
 }

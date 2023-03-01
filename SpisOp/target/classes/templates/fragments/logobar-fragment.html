@@ -8,7 +8,6 @@
     <title>Title</title>
 </head>
 <body>
-
         <div class="header">
             <div class="logo">
                 <a th:href="@{/}">
@@ -16,10 +15,8 @@
                 </a>
             </div>
             <div class="searchbar">
-                <form class="searchForm">
-                    <input type="text" placeholder="Søg..." name="search">
+                    <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Søg..">
                     <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
             </div>
             <div class="about options">
                 <a th:href="@{/om-os}">Om Os</a>
@@ -32,11 +29,20 @@
             </div>
         </div>
         <div class="nav_container">
-            <div class="madspild nav_links"><a th:href="@{/madspild-i-danmark}">Madspild I Danmark</a></div>
-            <div class="råd nav_links "><a>Gode Råd</a></div>
-            <div class="anbefalinger nav_links "><a>Anbefalinger</a></div>
-            <div class="inspireret nav_links "><a>Bliv Inspireret</a></div>
+            <div class="madspild nav_links">
+                <a th:href="@{/madspild-i-danmark}">Madspild I Danmark</a>
+            </div>
+            <div class="råd nav_links ">
+                <a th:href="@{/gode-rod}">Gode Råd</a>
+            </div>
+            <div class="anbefalinger nav_links ">
+                <a th:href="@{/anbefalinger}">Anbefalinger</a>
+            </div>
+            <div class="inspireret nav_links ">
+                <a th:href="@{/bliv-inspireret}">Bliv Inspireret</a>
+            </div>
         </div>
 
+        <script type="text/javascript" th:src="@{/js/action.js}"></script>
 </body>
 </html>
