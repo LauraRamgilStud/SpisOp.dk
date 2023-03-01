@@ -3,6 +3,7 @@
       xmlns:th="http://thymeleaf.org" lang="">
 <link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
 <link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
+<link rel="stylesheet" type="text/css" href="../static/css/footerStyles.css" th:href="@{css/footerStyles.css}">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
 </head>
 <body>
     <div th:insert="fragments/logobar-fragment.html"></div>
-    <div class="window">
+    <div class="window" id="top">
         <div class="main_1">
             <div class="intro_1">
                 <h2>HOLD DIG OPDATERET</h2>
@@ -32,4 +33,7 @@
         </div>
     </div>
 </body>
+<footer>
+    <div th:insert="fragments/footer-fragment.html"></div>
+</footer>
 </html>
