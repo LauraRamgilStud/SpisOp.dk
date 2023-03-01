@@ -1,36 +1,63 @@
+.toTheTop {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    align-items: center;
+    background-color: #E29553;
+}
+
 .footerContent {
     display: grid;
-    grid-template-rows: 200px;
-    grid-template-columns: repeat(3, 1fr) minmax(100px, 3fr);
-    grid-gap: 1em 3em;
-    grid-template-areas:
-      'footerTop'
-      'footerMiddle'
-      'footerBottom';
-}
+    grid-template-rows: 75px;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    align-items: center;
+    background-color: #E29553;
 
-.toTop {
-    grid-area: footerTop;
-    justify-self: baseline;
-    justify-self: center;
-}
-
-.about {
-    grid-area: footerMiddle;
-    justify-self: baseline;
-    align-self: flex-end;
-}
-
-.contact {
-    justify-self: baseline;
-    grid-area: footerMiddle;
-
-}
-
-.subscribe {
-    grid-area: footerMiddle;
 }
 
 .footerInfo {
-    grid-area: footerBottom;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    align-items: center;
+
 }
+
+.toTop {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.footerContent about {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.footerContent contact {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footerContent subscribe {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.footerInfo info1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.footerInfo info2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.footerInfo info3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+

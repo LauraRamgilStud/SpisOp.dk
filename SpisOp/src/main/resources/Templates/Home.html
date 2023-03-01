@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://thymeleaf.org/" lang="da">
-<link rel="Stylesheet" type="text/css" href="../Static/CSS/FooterStyle.css" th:href="@{CSS/FooterStyle.css}">
+<link type="text/css" rel="stylesheet" href="/Static/CSS/FooterStyle.css" th:href="@{CSS/FooterStyle.css}">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<footer>
+
+<div class="toTheTop">
+    <div class="toTop">
+        <p>Til toppen</p>
+    </div>
+</div>
 
     <div class="footerContent">
-      <div class="toTop">Til toppen</div>
-      <div class="about">Om Os</div>
-      <div class="contact">Kontakt</div>
-      <div class="subscribe">Tilmeld</div>
+      <div class="about">
+          <p>Om Os</p>
+      </div>
+      <div class="contact">
+          <p>Kontakt</p>
+      </div>
+      <div class="subscribe">
+          <p>Tilmeld</p>
+      </div>
     </div>
 
     <div class="footerInfo">
-        <p>Guldbergsgade 29N, 2200 København N</p>
-        <p>Tlf: +45 4646 0000</p>
-        <p>Email: spisop@dmm.dk</p>
+        <div class="info1">
+            <p>Guldbergsgade 29N, 2200 København N</p>
+        </div>
+        <div class="info2">
+            <p>Tlf: +45 4646 0000</p>
+        </div>
+        <div class="info3">
+            <p>Email: spisop@dmm.dk</p>
+        </div>
     </div>
-
-</footer>
 </body>
 </html>
