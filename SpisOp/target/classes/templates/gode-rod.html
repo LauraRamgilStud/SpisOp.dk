@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org" lang="">
+<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
+<link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Gode Råd</title>
+</head>
+<body>
+
+<div th:insert="fragments/logobar-fragment.html"></div>
+    <ul>
+        <li class="gode_råd">
+            <div>
+                <h4 id="point">Planlæg dine måltider</h4>
+                <p id="para">Planlæg dine måltider og køb kun ind til det, du har brug for.
+                    Lav en madplan og en indkøbsliste, så du ikke køber mere, end du kan nå at bruge.</p>
+            </div>
+        </li>
+        <li class="gode_råd">
+            <div>
+                <h2>Hold øje med madvarernes holdbarhed</h2>
+                <p>Hold øje med madvarernes holdbarhed. Brug først de varer,
+                    der udløber først, og sørg for at opbevare maden korrekt.</div>
+        </li>
+    </ul>
+
+    <script type="text/javascript" th:src="@{/js/action.js}"></script>
+</body>
+</html>
