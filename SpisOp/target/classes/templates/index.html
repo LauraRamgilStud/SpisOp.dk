@@ -12,10 +12,11 @@
     <div th:insert="fragments/logobar-fragment.html"></div>
     <div class="window">
         <div class="main_1">
-            <h1>Gode Råd</h1>
-            <p>#10 gode råd for at undgå madspild<br>
-                Madspild er et stort problem både for miljøet og for vores økonomi.<br>
-                Her er 10 gode råd til, hvordan du kan undgå madspild:</p>
+            <div class="intro_1">
+                <h2>HOLD DIG OPDATERET</h2>
+                <h3>TILMELD DIG VORES NYHEDSBREV</h3>
+                <button class="button" style="vertical-align:middle"><span>TILMELD</span></button>
+            </div>
         </div>
         <div>
             <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
@@ -23,7 +24,11 @@
             </video>
         </div>
         <div class="main_2">
-
+            <div class="intro_2">
+                <h2>SAMMEN GØR VI EN FORSKEL</h2>
+                <h3>LÆS MERE OM MADSPILD I DANMARK</h3>
+                <a th:href="@{/madspild-i-danmark}"><button  class="button" style="vertical-align:middle"><span>LÆS MERE</span></button></a>
+            </div>
         </div>
     </div>
 </body>
