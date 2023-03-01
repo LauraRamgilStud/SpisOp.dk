@@ -59,6 +59,51 @@ input::placeholder {
     background-color: #FFFFDE;
 }
 
+.nav_container {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(8, 2fr);
+    /*border: 2px solid black;*/
+    justify-items: center;
+    align-items: center;
+    background-color: #E29553;
+}
+
+.nav_container a {
+    text-decoration: none;
+    color: black;
+}
+
+.madspild {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.råd {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+.anbefalinger {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+
+.inspireret {
+    grid-row: 1 / 2;
+    grid-column: 6 / 7;
+}
+
+.nav_container.nav_links {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #FFFFDE;
+}
+
+.nav_container .nav_links:hover {
+    background-color: #EFE9CA;
+}
+
 
 
 
