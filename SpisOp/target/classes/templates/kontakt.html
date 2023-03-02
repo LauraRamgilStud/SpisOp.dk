@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://thymeleaf.org" lang="">
-<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
-
+<link rel="stylesheet" type="text/css" href="../../static/css/contactStyles.css" th:href="@{css/contactStyles.css}">
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
 </head>
 <body>
     <div th:insert="fragments/logobar-fragment.html"></div>
+    <div class="contact_container_outer" id="top">
+        <img id="rapeseed_image" th:src="@{images/rapeseed_field.jpg}" src="../static/images/rapeseed_field.jpg" >
+        <div class="contact_container_inner">
+            <div class="contact_top">
+                <h2>Kontakt</h2>
+                <h3>Vi vil meget gerne høre fra dig</h3>
+            </div>
+            <div class="contact_form">
+                <form id="form" action="mailto:laur493w@stud.kea.dk" method="GET">
+                    <label for="contact_subject">Emne</label>
+                    <input type="text" id="contact_subject" name="subject" placeholder="Emne..">
+
+                    <label for="text_area">Hvad har du på hjerte?</label>
+                    <textarea id="text_area" name="text_area" placeholder="Skriv her.." required></textarea>
+                    <p>OBS: Ved tryk på 'Send besked' åbner en ny side</p>
+                    <button type="submit">Send besked</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+    <footer>
+        <div th:insert="fragments/footer-fragment.html"></div>
+    </footer>
 </html>

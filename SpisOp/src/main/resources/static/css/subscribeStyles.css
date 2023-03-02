@@ -1,0 +1,75 @@
+.join_container_outer {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 2fr);
+}
+
+#rapeseed_image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.join_container_inner {
+    grid-row: 2 / 8;
+    grid-column: 2 / 6;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 2fr);
+    border: 1px solid black;
+    background: linear-gradient(110deg, rgba(243, 206, 169, 0.85) 50%, rgba(246, 199, 146, 0.85) 50%);
+}
+
+.join_top {
+    grid-row: 2 / 3;
+    grid-column: 3 / 7;
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+}
+.join_top h2 {
+    grid-row: 1 / 2;
+    justify-self: center;
+    color: white;
+    font-family: Candara;
+}
+
+.join_top h3 {
+    grid-row: 2 / 3;
+    justify-self: center;
+    color: white;
+    font-family: Candara;
+}
+
+.join_form {
+    grid-row: 4 / 6;
+    grid-column: 2 / 8;
+    display: grid;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.join_form button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #a7c95e;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 10px;
+}
