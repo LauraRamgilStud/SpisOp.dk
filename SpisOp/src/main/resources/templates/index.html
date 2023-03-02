@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://thymeleaf.org" lang="">
-<link rel="stylesheet" type="text/css" href="../../static/css/windowStyles.css" th:href="@{css/windowStyles.css}">
+
+<link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
+<link rel="stylesheet" type="text/css" href="../static/css/footerStyles.css" th:href="@{css/footerStyles.css}">
+<link rel="icon" type="image/x-icon" href="/images/logo.svg">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>SpisOp | HOME</title>
+    <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-    <div th:insert="fragments/logobar-fragment.html"></div>
     <div class="window" id="top">
         <div class="main_1">
             <div class="intro_1">
-                <h2>HOLD DIG OPDATERET</h2>
-                <h3>TILMELD DIG VORES NYHEDSBREV</h3>
-                <button class="button" style="vertical-align:middle"><span>TILMELD</span></button>
+                <h2 style="text-align: left">HOLD DIG OPDATERET</h2>
+                <div class="cover">
+                    <img th:src="@{images/Cover1.png}" src="../static/images/Cover1.png">
+                </div>
+                <h3 style="text-align: left">TILMELD DIG VORES NYHEDSBREV</h3>
+                <a th:href="@{/tilmeld}" style="horiz-align: right"><button  class="button"><span>TILMELD</span></button></a>
             </div>
         </div>
         <div>
@@ -23,9 +30,9 @@
         </div>
         <div class="main_2">
             <div class="intro_2">
-                <h2>SAMMEN GØR VI EN FORSKEL</h2>
-                <h3>LÆS MERE OM MADSPILD I DANMARK</h3>
-                <a th:href="@{/madspild-i-danmark}"><button  class="button" style="vertical-align:middle"><span>LÆS MERE</span></button></a>
+                <h2 style="text-align: right">SAMMEN GØR VI EN FORSKEL</h2>
+                <h3 style="text-align: right">LÆS MERE OM MADSPILD I DANMARK</h3>
+                <a th:href="@{/madspild-i-danmark}" style="horiz-align: right"><button  class="button"><span>LÆS MERE</span></button></a>
             </div>
         </div>
     </div>
