@@ -10,22 +10,36 @@
 <body>
 
 <div th:insert="fragments/logobar-fragment.html"></div>
-    <ul>
-        <li class="gode_råd">
-            <div>
-                <h4 id="point">Planlæg dine måltider</h4>
-                <p id="para">Planlæg dine måltider og køb kun ind til det, du har brug for.
-                    Lav en madplan og en indkøbsliste, så du ikke køber mere, end du kan nå at bruge.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <h2>Hold øje med madvarernes holdbarhed</h2>
-                <p>Hold øje med madvarernes holdbarhed. Brug først de varer,
-                    der udløber først, og sørg for at opbevare maden korrekt.</div>
-        </li>
-    </ul>
-    <div th:insert="fragments/footer-fragment.html"></div>
-    <script type="text/javascript" th:src="@{/js/action.js}"></script>
+<ul>
+    <li class="gode_råd">
+        <div>
+            <p><strong>Planlæg dine måltider</strong> og køb kun ind til det, du har brug for.
+                Lav en madplan og en indkøbsliste, så du ikke køber mere, end du kan nå at bruge.</p>
+            <p><strong>Hold øje med holdbarhed</strong> og brug de madvarer, der har kortest holdbarhed, først.
+            <p><strong>Opbevar dine madvarer korrekt:</strong> hvis du er i tvivl, kan du ofte finde information vdr.
+                opbevaring på emballagen.</p>
+            <p><strong>Frys</strong> overskydende mad ned, så det kan bruges senere.</p>
+            <p><strong>Brug rester </strong>fra aftensmaden i madpakken, eller lav en ret med de rester, der er tilbage
+                i køleskabet.</p>
+            <p><strong>Vær opmærksom på portionerne,</strong> når du laver mad og lav kun den mængde, du har brug for og
+                undgå at lave for meget.</p>
+            <p><strong>Brug dine sanser,</strong> når du vurderer, om maden stadig er spiselig. Det er ikke altid
+                nødvendigt at smide mad ud, bare fordi det har passeret sidste salgsdato.</p>
+            <p><strong>Gem skræller og madrester</strong> i en beholder i fryseren til fond eller suppe.</p>
+            <p><strong>Lav en restekasse</strong> i køleskabet, hvor du kan opbevare små mængder af forskellige rester,
+                som du senere kan bruge i en ret.</p>
+            <p><strong>Køb ind i bulk</strong> og del evt. med venner og familie, så du undgår at købe mere, end du kan
+                nå at bruge.</p>
+            <p><strong>Giv maden videre,</strong> hvis du har mad til overs, kan du give det til venner, familie eller
+                naboer, som måske kan bruge det.</p>
+            <br>
+            <p>Husk på, at selv små ændringer i din madlavning og spisevaner kan gøre en stor forskel for at mindske
+                madspildet!</p>
+            <br>
+        </div>
+    </li>
+</ul>
+<div th:insert="fragments/footer-fragment.html"></div>
+<script type="text/javascript" th:src="@{/js/action.js}"></script>
 </body>
 </html>
