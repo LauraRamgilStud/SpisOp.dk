@@ -1,31 +1,51 @@
 h2 {
     font-family: "Cambay Devanagari";
-
     color: #FFFFDE;
     font-size: xx-large;
 }
 
 h3 {
     font-family: "Cambay Devanagari";
-
     font-size: x-large;
     color: #FFFFDE;
 }
 
 .window {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 200px);
     grid-template-columns: repeat(6, 1fr);
 }
 
 .main_1 {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-row: 1 / 2;
+    grid-template-columns: repeat(10, 1fr);
+    grid-row: 1 / 4;
     grid-column: 1 / 7;
     background: linear-gradient(110deg, rgba(246, 199, 146, 0.85) 60%, rgba(243, 206, 169, 0.85) 60%);
 }
 
+.main_2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row: 6 / 11;
+    grid-column: 1 / 7;
+    background: linear-gradient(110deg, rgba(243, 206, 169, 0.85) 50%, rgba(246, 199, 146, 0.85) 50%);
+}
+.main_3{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row: 1 / 5;
+    grid-column: 1 / 7;
+    background: rgba(243, 206, 169, 0.85);
+}
+
+.main_4{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row: 6 / 11;
+    grid-column: 1 / 7;
+    background: rgba(243, 206, 169, 0.85);
+}
 .intro_1 {
     grid-row: 1 / 2;
     grid-column: 3 / 6;
@@ -36,13 +56,14 @@ h3 {
     grid-column: 6 / 6;
 }
 
-.main_2 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-row: 4 / 7;
-    grid-column: 1 / 7;
-    background: linear-gradient(110deg, rgba(243, 206, 169, 0.85) 50%, rgba(246, 199, 146, 0.85) 50%);
+.intro_3 {
+    font-family: "Cambay Devanagari";
+    font-size: x-large;
+    color: #FFFFDE;
+    grid-row: 1 / 4;
+    grid-column: 3 / 7;
 }
+
 
 #background-video {
     width: 100vw;
@@ -56,18 +77,16 @@ h3 {
     z-index: -1;
 }
 
-
-
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #a7c95e;
+    background-color: #f59e44;
     border: none;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    font-size: 15px;
+    padding: 15px;
+    width: 150px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -96,4 +115,10 @@ h3 {
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.cover{
+    position: absolute;
+    right: 10%;
+    top: 20%
 }
