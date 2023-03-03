@@ -77,8 +77,8 @@ input::placeholder {
 
 .nav_container a {
     color: #d78844;
-    font-family: "Cambay Devanagari";
-    font-size: x-large;
+    font-family: Tahoma;
+    font-size: medium;
     text-decoration: none;
     padding: 11px;
     border: 1px solid #faeeea;
