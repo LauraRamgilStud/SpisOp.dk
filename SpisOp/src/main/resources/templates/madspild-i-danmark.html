@@ -10,20 +10,14 @@
     <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-<div class="window" id="top">
-    <div class="main_3">
-        <div class="intro_3">
+
+    <div class="window">
+        <div class="intro">
             <h4>20 facts om madspild i Danmark</h4>
             <p>Madspild er et stort problem i Danmark og i resten af verden. Her er 20 facts om madspild i Danmark:</p>
         </div>
-    </div>
-    <div>
-        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
-            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="main_4">
-        <div class="intro_3">
+
+        <div class="content">
             <ul class="waste_denmark_list">
                 <li class="gode_råd">
                     <div>
@@ -128,7 +122,13 @@
             </ul>
         </div>
     </div>
-</div>
+    <div>
+        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
+            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
     <script type="text/javascript" th:src="@{/js/action.js}"></script>
 </body>
 <footer>
