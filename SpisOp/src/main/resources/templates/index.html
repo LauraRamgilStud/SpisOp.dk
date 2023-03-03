@@ -13,14 +13,15 @@
 </head>
 <body>
     <div class="window_home" id="top">
-        <div class="main_1">
-            <div class="intro_1">
+        <div class="block1_frontpage">
+            <div id="block1">
                 <h2 style="text-align: left">HOLD DIG OPDATERET</h2>
-                <div class="cover">
-                    <img th:src="@{images/Cover1.png}" src="../static/images/Cover1.png">
+
+                <h3>TILMELD DIG VORES NYHEDSBREV</h3>
+                <a th:href="@{/tilmeld}"><button  class="button"><span>TILMELD</span></button></a>
+                <div>
+                    <img id="frontpage_img1" th:src="@{images/fp1.png}" src="../static/images/fp1.png">
                 </div>
-                <h3 style="text-align: left">TILMELD DIG VORES NYHEDSBREV</h3>
-                <a th:href="@{/tilmeld}" style="horiz-align: right"><button  class="button"><span>TILMELD</span></button></a>
             </div>
         </div>
         <div>
@@ -28,11 +29,15 @@
                 <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="main_2">
-            <div class="intro_2">
-                <h2 style="text-align: right">SAMMEN GØR VI EN FORSKEL</h2>
-                <h3 style="text-align: right">LÆS MERE OM MADSPILD I DANMARK</h3>
-                <a th:href="@{/madspild-i-danmark}" style="horiz-align: right"><button  class="button"><span>LÆS MERE</span></button></a>
+        <div class="block2_frontpage">
+            <div id="block2">
+                <h2>SAMMEN GØR VI EN FORSKEL</h2>
+
+                <h3>LÆS MERE OM MADSPILD I DANMARK</h3>
+                <a th:href="@{/madspild-i-danmark}"><button  class="button"><span>LÆS MERE</span></button></a>
+                <div>
+                    <img id="frontpage_img2" th:src="@{images/fp2.png}" src="../static/images/fp2.png">
+                </div>
             </div>
         </div>
     </div>
