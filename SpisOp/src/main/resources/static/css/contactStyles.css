@@ -37,14 +37,14 @@
     grid-row: 1 / 2;
     justify-self: center;
     color: white;
-    font-family: Candara;
+    font-family: Tahoma;
 }
 
 .contact_top h3 {
     grid-row: 2 / 3;
     justify-self: center;
     color: white;
-    font-family: Candara;
+    font-family: Tahoma;
 }
 
 .contact_form {
@@ -75,7 +75,7 @@ label {
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: Candara;
+    font-family: Tahoma;
     color: white;
 }
 
@@ -93,6 +93,6 @@ label {
 }
 
 .contact_form p {
-    font-family: Candara;
+    font-family: Tahoma;
     font-size: 10px;
 }

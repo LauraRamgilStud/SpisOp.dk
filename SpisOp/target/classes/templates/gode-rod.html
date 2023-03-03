@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://thymeleaf.org" lang="">
+      xmlns:th="http://thymeleaf.org" lang="da">
 <link rel="icon" type="image/x-icon" href="/images/rentoffel.png">
-<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
 <link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
 
 <head>
     <meta charset="UTF-8">
-    <title>Gode Råd</title>
+    <title>SpisOp | Gode Råd</title>
+    <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
+<div class="window" id="top">
+    <div class="main_3">
+        <div class="intro_3">
+            <p>Her står en indledning</p>
+        </div>
+    </div>
 
-    <div th:insert="fragments/logobar-fragment.html"></div>
-    <ul>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Planlæg dine måltider</strong> og køb kun ind til det, du har brug for.
-                    Lav en madplan og en indkøbsliste, så du ikke køber mere, end du kan nå at bruge.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Hold øje med holdbarhed</strong> og brug de madvarer, der har kortest holdbarhed, først. </p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Opbevar dine madvarer korrekt:</strong> hvis du er i tvivl, kan du ofte finde information vdr.
-                    opbevaring på emballagen.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Frys</strong> overskydende mad ned, så det kan bruges senere.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Brug rester </strong>fra aftensmaden i madpakken, eller lav en ret med de rester, der er tilbage
-                    i køleskabet.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Vær opmærksom på portionerne,</strong> når du laver mad og lav kun den mængde, du har brug for og
-                    undgå at lave for meget.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Brug dine sanser,</strong> når du vurderer, om maden stadig er spiselig. Det er ikke altid
-                    nødvendigt at smide mad ud, bare fordi det har passeret sidste salgsdato.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Gem skræller og madrester</strong> i en beholder i fryseren til fond eller suppe.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Lav en restekasse</strong> i køleskabet, hvor du kan opbevare små mængder af forskellige rester,
-                    som du senere kan bruge i en ret.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Køb ind i bulk</strong> og del evt. med venner og familie, så du undgår at købe mere, end du kan
-                    nå at bruge.</p>
-            </div>
-        </li>
-        <li class="gode_råd">
-            <div>
-                <p><strong>Giv maden videre,</strong> hvis du har mad til overs, kan du give det til venner, familie eller
-                    naboer, som måske kan bruge det.</p>
-            </div>
-        </li>
-    </ul>
-    <br>
-    <p>Husk på, at selv små ændringer i din madlavning og spisevaner kan gøre en stor forskel for at mindske
-        madspildet!</p>
-    <br>
-<script type="text/javascript" th:src="@{/js/action.js}"></script>
+    <div>
+        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
+            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="main_4">
+        <div class="intro_3">
+            <ul>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Planlæg dine måltider</strong> og køb kun ind til det, du har brug for.
+                            Lav en madplan og en indkøbsliste, så du ikke køber mere, end du kan nå at bruge.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Hold øje med holdbarhed</strong> og brug de madvarer, der har kortest holdbarhed, først. </p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Opbevar dine madvarer korrekt:</strong> hvis du er i tvivl, kan du ofte finde information vdr.
+                            opbevaring på emballagen.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Frys</strong> overskydende mad ned, så det kan bruges senere.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Brug rester </strong>fra aftensmaden i madpakken, eller lav en ret med de rester, der er tilbage
+                            i køleskabet.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Vær opmærksom på portionerne,</strong> når du laver mad og lav kun den mængde, du har brug for og
+                            undgå at lave for meget.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Brug dine sanser,</strong> når du vurderer, om maden stadig er spiselig. Det er ikke altid
+                            nødvendigt at smide mad ud, bare fordi det har passeret sidste salgsdato.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Gem skræller og madrester</strong> i en beholder i fryseren til fond eller suppe.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Lav en restekasse</strong> i køleskabet, hvor du kan opbevare små mængder af forskellige rester,
+                            som du senere kan bruge i en ret.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Køb ind i bulk</strong> og del evt. med venner og familie, så du undgår at købe mere, end du kan
+                            nå at bruge.</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p><strong>Giv maden videre,</strong> hvis du har mad til overs, kan du give det til venner, familie eller
+                            naboer, som måske kan bruge det.</p>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <p>Husk på, at selv små ændringer i din madlavning og spisevaner kan gøre en stor forskel for at mindske madspildet!</p>
+            <br>
+        </div>
+    </div>
+</div>
 </body>
+    <script type="text/javascript" th:src="@{/js/action.js}"></script>
 <footer>
     <div th:insert="fragments/footer-fragment.html"></div>
 </footer>

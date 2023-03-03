@@ -1,121 +1,134 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://thymeleaf.org" lang="da">
-<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
+<link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
 <link rel="icon" type="image/x-icon" href="/images/rentoffel.png">
 
 <head>
     <meta charset="UTF-8">
-    <title>Madspild I Danmark</title>
+    <title>SpisOp | Madspild I Danmark</title>
+    <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-    <div th:insert="fragments/logobar-fragment.html"></div>
-    <div>
-        <h4>20 facts om madspild i Danmark</h4>
-        <p>Madspild er et stort problem i Danmark og i resten af verden. Her er 20 facts om madspild i Danmark:</p>
-        <ul class="waste_denmark_list">
-            <li class="gode_råd">
-                <div>
-                    <p>1. Hvert år bliver der smidt 700.000 ton mad ud i Danmark. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>2. Dette svarer til 123 kg mad per person om året. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>3. Husholdninger står for 38% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>4. Detailhandlen står for 15% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>5. Storkøkkener står for 14% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>6. Fødevareproducenter står for 13% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>7. Restauranter, caféer og lignende står for 10% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>8. Madspild i Danmark koster samfundet omkring 11 milliarder kroner om året. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>9. Madspild i Danmark betyder også, at der bliver brugt unødvendige ressourcer som vand, energi og arbejdskraft. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>10. 30% af det globale fødevaretab sker allerede i produktionen. (Kilde: FN's Fødevare- og Landbrugsorganisation)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>11. Hvis madspild var et land, ville det være verdens tredjestørste CO2-udleder efter USA og Kina. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>12. Hvis vi kan reducere madspildet, kan vi også reducere behovet for at producere mere mad og dermed mindske belastningen på miljøet. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>13. Det er ikke kun maden, der bliver spildt, men også emballagen, som kan have en negativ effekt på miljøet. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>14. Hvis vi kan reducere madspildet, kan det også være med til at mindske sult og fattigdom i verden. (Kilde: FN's Fødevare- og Landbrugsorganisation)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>15. Danmark har en national strategi for at reducere madspild med 50% inden 2030. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>16. Stop Spild Af Mad er en organisation, der arbejder for at reducere madspild i Danmark. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>17. Madspild kan også være en mulighed for at skabe nye forretningsmodeller og arbejdspladser. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>18. Mindre madspild kan også føre til økonomiske besparelser for både husholdninger, fødevareproducenter og detailhandlen. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>19. Madspild kan reduceres ved at planlægge måltiderne bedre, købe ind efter behov, opbevare maden korrekt og bruge rester i nye retter. (Kilde: Miljø- og Fødevareministeriet)</p>
-                </div>
-            </li>
-            <li class="gode_råd">
-                <div>
-                    <p>20. Alle kan være med til at reducere madspild ved at være bevidste om deres egen madspild og tage ansvar for at reducere det. (Kilde: Stop Spild Af Mad)</p>
-                </div>
-            </li>
-        </ul>
+<div class="window" id="top">
+    <div class="main_3">
+        <div class="intro_3">
+            <h4>20 facts om madspild i Danmark</h4>
+            <p>Madspild er et stort problem i Danmark og i resten af verden. Her er 20 facts om madspild i Danmark:</p>
+        </div>
     </div>
+    <div>
+        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
+            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="main_4">
+        <div class="intro_3">
+            <ul class="waste_denmark_list">
+                <li class="gode_råd">
+                    <div>
+                        <p>1. Hvert år bliver der smidt 700.000 ton mad ud i Danmark. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>2. Dette svarer til 123 kg mad per person om året. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>3. Husholdninger står for 38% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>4. Detailhandlen står for 15% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>5. Storkøkkener står for 14% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>6. Fødevareproducenter står for 13% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>7. Restauranter, caféer og lignende står for 10% af det samlede madspild i Danmark. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>8. Madspild i Danmark koster samfundet omkring 11 milliarder kroner om året. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>9. Madspild i Danmark betyder også, at der bliver brugt unødvendige ressourcer som vand, energi og arbejdskraft. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>10. 30% af det globale fødevaretab sker allerede i produktionen. (Kilde: FN's Fødevare- og Landbrugsorganisation)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>11. Hvis madspild var et land, ville det være verdens tredjestørste CO2-udleder efter USA og Kina. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>12. Hvis vi kan reducere madspildet, kan vi også reducere behovet for at producere mere mad og dermed mindske belastningen på miljøet. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>13. Det er ikke kun maden, der bliver spildt, men også emballagen, som kan have en negativ effekt på miljøet. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>14. Hvis vi kan reducere madspildet, kan det også være med til at mindske sult og fattigdom i verden. (Kilde: FN's Fødevare- og Landbrugsorganisation)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>15. Danmark har en national strategi for at reducere madspild med 50% inden 2030. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>16. Stop Spild Af Mad er en organisation, der arbejder for at reducere madspild i Danmark. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>17. Madspild kan også være en mulighed for at skabe nye forretningsmodeller og arbejdspladser. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>18. Mindre madspild kan også føre til økonomiske besparelser for både husholdninger, fødevareproducenter og detailhandlen. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>19. Madspild kan reduceres ved at planlægge måltiderne bedre, købe ind efter behov, opbevare maden korrekt og bruge rester i nye retter. (Kilde: Miljø- og Fødevareministeriet)</p>
+                    </div>
+                </li>
+                <li class="gode_råd">
+                    <div>
+                        <p>20. Alle kan være med til at reducere madspild ved at være bevidste om deres egen madspild og tage ansvar for at reducere det. (Kilde: Stop Spild Af Mad)</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
     <script type="text/javascript" th:src="@{/js/action.js}"></script>
 </body>
 <footer>

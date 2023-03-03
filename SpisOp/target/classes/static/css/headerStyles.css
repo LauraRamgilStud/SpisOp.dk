@@ -32,10 +32,9 @@
     width: 500px;
 }
 
-.input,
-input::placeholder {
+#searchbar::placeholder {
     color: #cb8c67;
-    font-family: "Cambay Devanagari";
+    font-family: Tahoma;
     font-size: 25px;
 }
 
@@ -54,7 +53,7 @@ input::placeholder {
 .options a{
     color: #cb8c67;
     font-size: x-large;
-    font-family: "Cambay Devanagari";
+    font-family: Tahoma;
     text-decoration: none;
     padding: 8px;
     border: 1px solid #faeeea;
@@ -72,7 +71,7 @@ input::placeholder {
     grid-template-columns: repeat(8, 2fr);
     justify-items: center;
     align-items: center;
-    background-color: rgba(250, 182, 112, 0.9);
+    background-color: rgba(250, 182, 112);
 }
 
 .nav_container a {
@@ -83,7 +82,7 @@ input::placeholder {
     padding: 11px;
     border: 1px solid #faeeea;
     border-radius: 0px;
-    background-color: rgba(250, 182, 112, 0.9);
+    background-color: rgba(250, 182, 112);
 }
 
 .madspild {

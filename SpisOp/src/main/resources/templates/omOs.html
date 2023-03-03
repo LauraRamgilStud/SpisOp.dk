@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://thymeleaf.org" lang="">
-<link type="text/css" rel="stylesheet" th:href="@{css/headerStyles.css}" href="/static/css/headerStyles.css">
+<link type="text/css" rel="stylesheet" th:href="@{css/windowStyles.css}" href="/static/css/windowStyles.css">
 <link rel="icon" type="image/x-icon" href="/images/rentoffel.png">
 
 <head>
     <meta charset="UTF-8">
-    <title>Om Os</title>
+    <title>SpisOp | Om os</title>
+    <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-<div th:insert="fragments/logobar-fragment.html"></div>
-
-<ul>
-    <li class="omOs">
-        <div>
-            <p>Danmark Mod Madspild er en non-profit organisation, der har til formål at reducere mængden af madspild i
-                Danmark. Vi arbejder på flere fronter for at bekæmpe madspild; en af vores vigtigste aktiviteter er at
-                indsamle
-                overskudsmad fra supermarkeder og producenter og distribuere det til mennesker i nød. Vi samarbejder
-                også med
-                restauranter og cateringvirksomheder for at reducere madspild i deres drift og tilbyde overskudsmad til
-                sociale
-                organisationer.
-            </p>
-            <br>
-            <p>En anden vigtig aktivitet i organisationen er uddannelse og oplysning. Danmark Mod Madspild tilbyder
-                workshops
-                og kurser til skoler, virksomheder og offentlige institutioner for at øge bevidstheden om madspild og
-                lære folk,
-                hvordan man kan reducere det i deres eget liv.
-            </p>
-            <br>
-            <p>Vi er stolte af at kunne sige, at vores arbejde allerede har haft en betydelig effekt på Danmarks
-                madspildsproblem. Vi har samlet og distribueret tusindvis af tons mad til mennesker i nød, og vores
-                oplysningskampagner har nået mange mennesker og hjulpet med at ændre deres adfærd. Med fortsat støtte og
-                opbakning fra samfundet kan Danmark Mod Madspild fortsætte med at bekæmpe madspild og skabe en mere
-                bæredygtig
-                fremtid.
-            </p>
+<div class="window" id="top">
+    <div class="main_5">
+        <div class="intro_3">
+            <div class="recommendations_intro">
+                <ul>
+                    <li class="omOs">
+                        <div>
+                            <p>Danmark Mod Madspild er en non-profit organisation, der har til formål at reducere mængden af madspild i
+                                Danmark. Vi arbejder på flere fronter for at bekæmpe madspild; en af vores vigtigste aktiviteter er at
+                                indsamle
+                                overskudsmad fra supermarkeder og producenter og distribuere det til mennesker i nød. Vi samarbejder
+                                også med
+                                restauranter og cateringvirksomheder for at reducere madspild i deres drift og tilbyde overskudsmad til
+                                sociale
+                                organisationer.
+                            </p>
+                            <br>
+                            <p>En anden vigtig aktivitet i organisationen er uddannelse og oplysning. Danmark Mod Madspild tilbyder
+                                workshops
+                                og kurser til skoler, virksomheder og offentlige institutioner for at øge bevidstheden om madspild og
+                                lære folk,
+                                hvordan man kan reducere det i deres eget liv.
+                            </p>
+                            <br>
+                            <p>Vi er stolte af at kunne sige, at vores arbejde allerede har haft en betydelig effekt på Danmarks
+                                madspildsproblem. Vi har samlet og distribueret tusindvis af tons mad til mennesker i nød, og vores
+                                oplysningskampagner har nået mange mennesker og hjulpet med at ændre deres adfærd. Med fortsat støtte og
+                                opbakning fra samfundet kan Danmark Mod Madspild fortsætte med at bekæmpe madspild og skabe en mere
+                                bæredygtig
+                                fremtid.
+                            </p>
+                            <img src="/images/tatoes.jpg" alt="Kartoffel-ansigter" width="800" height="450">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </li>
-</ul>
-
+    </div>
+    <div>
+        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
+            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 </body>
+<footer>
+    <div th:insert="fragments/footer-fragment.html"></div>
+</footer>
 </html>

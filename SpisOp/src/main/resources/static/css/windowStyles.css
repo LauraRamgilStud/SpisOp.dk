@@ -1,11 +1,5 @@
-h2 {
-    font-family: "Cambay Devanagari";
-    color: #FFFFDE;
-    font-size: xx-large;
-}
-
-h3 {
-    font-family: "Cambay Devanagari";
+p{
+    font-family: Tahoma;
     font-size: x-large;
     color: #FFFFDE;
 }
@@ -34,7 +28,14 @@ h3 {
 .main_3{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-row: 1 / 5;
+    grid-row: 1 / 3;
+    grid-column: 1 / 7;
+    background: rgba(243, 206, 169, 0.85);
+}
+.main_5{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-row: 1 / 11;
     grid-column: 1 / 7;
     background: rgba(243, 206, 169, 0.85);
 }
@@ -42,7 +43,7 @@ h3 {
 .main_4{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-row: 6 / 11;
+    grid-row: 5 / 11;
     grid-column: 1 / 7;
     background: rgba(243, 206, 169, 0.85);
 }
@@ -57,13 +58,12 @@ h3 {
 }
 
 .intro_3 {
-    font-family: "Cambay Devanagari";
+    font-family: Tahoma;
     font-size: x-large;
     color: #FFFFDE;
     grid-row: 1 / 4;
     grid-column: 3 / 7;
 }
-
 
 #background-video {
     width: 100vw;
@@ -121,4 +121,12 @@ h3 {
     position: absolute;
     right: 10%;
     top: 20%
+}
+
+img{
+    position: center;
+}
+
+ul{
+    list-style-type: none;
 }

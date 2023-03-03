@@ -36,14 +36,14 @@
     grid-row: 1 / 2;
     justify-self: center;
     color: white;
-    font-family: Candara;
+    font-family: Tahoma;
 }
 
 .join_top h3 {
     grid-row: 2 / 3;
     justify-self: center;
     color: white;
-    font-family: Candara;
+    font-family: Tahoma;
 }
 
 .join_form {

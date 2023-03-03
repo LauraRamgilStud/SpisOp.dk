@@ -4,36 +4,30 @@
 <link rel="stylesheet" type="text/css" href="../static/css/footerStyles.css" th:href="@{css/footerStyles.css}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Footer</title>
 </head>
 <body>
-<div class="footer_container">
-    <div class="toTheTop options_footer">
-        <a onclick="topFunction()" >Til toppen</a>
-    </div>
+    <div class="footer_container">
+        <div class="toTheTop options_footer">
+            <a onclick="topFunction()" >Til toppen</a>
+        </div>
 
-    <div class="about_footer options_footer">
-        <a th:href="@{/om-os}">Om Os</a>
-    </div>
+        <div class="about_footer options_footer">
+            <a th:href="@{/om-os}">Om Os</a>
+        </div>
 
-    <div class="contact_footer options_footer">
-        <a th:href="@{/kontakt}">Kontakt</a>
-    </div>
+        <div class="contact_footer options_footer">
+            <a th:href="@{/kontakt}">Kontakt</a>
+        </div>
 
-    <div class="subscribe_footer options_footer">
-        <a th:href="@{/tilmeld}">Tilmeld</a>
-    </div>
+        <div class="subscribe_footer options_footer">
+            <a th:href="@{/tilmeld}">Tilmeld</a>
+        </div>
 
-    <div class="info1">
-        <p>Guldbergsgade 29N, 2200 København N</p>
+        <div class="info_footer">
+            <p>Guldbergsgade 29N, 2200 København N - Tlf: +45 4646 0000 - Email: spisop@dmm.dk</p>
+        </div>
     </div>
-    <div class="info2">
-        <p>Tlf: +45 4646 0000</p>
-    </div>
-    <div class="info3">
-        <p>Email: spisop@dmm.dk</p>
-    </div>
-</div>
-<script type="text/javascript" th:src="@{/js/action.js}"></script>
+    <script type="text/javascript" th:src="@{/js/action.js}"></script>
 </body>
 </html>
