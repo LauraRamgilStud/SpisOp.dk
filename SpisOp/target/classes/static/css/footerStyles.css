@@ -1,7 +1,6 @@
 .footer_container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
     background-color: rgb(250, 182, 112);
@@ -9,35 +8,39 @@
 
 .toTheTop {
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.info_footer {
+    color: #FFFFDE;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+.footer_buttons {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    align-items: center;
+    justify-items: center;
 }
 
 .about_footer {
-    grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
 
 .contact_footer {
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-}
-
-.subscribe_footer {
-    grid-row: 2 / 3;
     grid-column: 4 / 5;
 }
 
-.info_footer p{
-    font-family: Tahoma;
-    font-size: medium;
-    color: #ffc09a;
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
+.subscribe_footer {
+    grid-column: 6 / 7;
 }
 
 .options_footer a{
     color: #d78844;
-    font-size: large;
+    font-size: medium;
     font-family: Tahoma;
     text-decoration: none;
     padding: 5px;
@@ -48,4 +51,8 @@
 
 .options_footer a:hover {
     background-color: #FFFFDE;
+}
+
+.footer_buttons a {
+    padding: 5px 20px 5px 20px;
 }
