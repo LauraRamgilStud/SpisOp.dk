@@ -32,10 +32,9 @@
     width: 500px;
 }
 
-.input,
-input::placeholder {
+#searchbar::placeholder {
     color: #cb8c67;
-    font-family: "Cambay Devanagari";
+    font-family: Tahoma;
     font-size: 25px;
 }
 
