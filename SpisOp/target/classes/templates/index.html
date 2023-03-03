@@ -12,16 +12,15 @@
     <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-    <div class="window_home" id="top">
+    <div class="window_home">
         <div class="block1_frontpage">
             <div id="block1">
                 <h2 style="text-align: left">HOLD DIG OPDATERET</h2>
-
-                <h3>TILMELD DIG VORES NYHEDSBREV</h3>
-                <a th:href="@{/tilmeld}"><button  class="button"><span>TILMELD</span></button></a>
                 <div>
                     <img id="frontpage_img1" th:src="@{images/fp1.png}" src="../static/images/fp1.png">
                 </div>
+                <h3>TILMELD DIG VORES NYHEDSBREV</h3>
+                <a th:href="@{/tilmeld}"><button  class="button"><span>TILMELD</span></button></a>
             </div>
         </div>
         <div>
@@ -32,12 +31,11 @@
         <div class="block2_frontpage">
             <div id="block2">
                 <h2>SAMMEN GØR VI EN FORSKEL</h2>
-
-                <h3>LÆS MERE OM MADSPILD I DANMARK</h3>
-                <a th:href="@{/madspild-i-danmark}"><button  class="button"><span>LÆS MERE</span></button></a>
                 <div>
                     <img id="frontpage_img2" th:src="@{images/fp2.png}" src="../static/images/fp2.png">
                 </div>
+                <h3>LÆS MERE OM MADSPILD I DANMARK</h3>
+                <a th:href="@{/madspild-i-danmark}"><button  class="button"><span>LÆS MERE</span></button></a>
             </div>
         </div>
     </div>

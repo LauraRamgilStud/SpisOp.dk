@@ -6,25 +6,24 @@ p{
 /*HOMEPAGE*/
 .window_home {
     display: grid;
-    grid-template-rows: 450px 100px 450px;
-    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 450px 200px 450px;
+    grid-template-columns: 50px auto 50px auto 50px;
 }
 
 .block1_frontpage {
     grid-row: 1 / 2;
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     background: linear-gradient(110deg, rgba(246, 199, 146, 0.85) 60%, rgba(243, 206, 169, 0.85) 60%);
 }
 
 .block2_frontpage {
     grid-row: 3 / 4;
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     background: linear-gradient(110deg, rgba(243, 206, 169, 0.85) 50%, rgba(246, 199, 146, 0.85) 50%);
 }
 #block1{
-    position: center;
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     font-family: Tahoma;
     font-size: large;
     text-align: left;
@@ -32,7 +31,7 @@ p{
 }
 #block2{
     grid-row: 3 / 4;
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
     font-family: Tahoma;
     font-size: large;
     text-align: right;
@@ -40,24 +39,27 @@ p{
 }
 
 #frontpage_img1{
-    display: block;
-    position: relative;
-    right: 50px;
-    width: 350px;
+    position: absolute;
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    right: 300px;
+    width: 450px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #frontpage_img2{
-    display: block;
-    position: relative;
-    left: 50px;
-    width: 350px;
+    position: absolute;
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    left: 300px;
+    width: 450px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*GENERAL PAGES*/
 .window {
+    font-family: Tahoma;
     display: grid;
     grid-template-rows: auto 50px auto 250px;
     grid-template-columns: 200px auto 200px;
@@ -76,8 +78,9 @@ p{
 }
 
 .window a, .window h1{
+    font-family: Tahoma;
     text-decoration: none;
-    color: white;
+    color: #FFFFDE;
 }
 
 #background-video {
@@ -90,6 +93,13 @@ p{
     top: 0;
     bottom: 0;
     z-index: -1;
+}
+
+#general_img{
+    position: static;
+    width: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button {
