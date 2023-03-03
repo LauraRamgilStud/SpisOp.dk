@@ -10,21 +10,12 @@
     <div th:insert="fragments/logobar-fragment.html"></div>
 </head>
 <body>
-<div class="window" id="top">
-    <div class="main_3">
-        <div class="intro_3">
-            <p>Her står en indledning</p>
+<div class="window">
+        <div class="intro">
+            <h1>Gode råd</h1>
+            <p>Madspild er et stort problem både for miljøet og for vores økonomi. Her har vi 10 gode råd til dig der gerne vil undgå madspild!</p>
         </div>
-    </div>
-
-    <div>
-        <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
-            <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <div class="main_4">
-        <div class="intro_3">
+        <div class="content">
             <ul>
                 <li class="gode_råd">
                     <div>
@@ -94,7 +85,11 @@
             <p>Husk på, at selv små ændringer i din madlavning og spisevaner kan gøre en stor forskel for at mindske madspildet!</p>
             <br>
         </div>
-    </div>
+</div>
+<div>
+    <video id="background-video" autoplay loop muted poster="../static/images/field.jpeg">
+        <source th:src="@{images/myVideo.mp4}" src="../static/images/myVideo.mp4" type="video/mp4">
+    </video>
 </div>
 </body>
     <script type="text/javascript" th:src="@{/js/action.js}"></script>
